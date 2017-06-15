@@ -1,0 +1,19 @@
+{
+  "name": "wdio-selenium-grid-setup-test",
+  "version": "0.0.1",
+  "description": "A simple example web page and WebdriverIO test to help comission CI infrastructure setups.",
+  "main": "app.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimCresswell/wdio-selenium-grid-setup-test.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimCresswell/wdio-selenium-grid-setup-test/issues"
+  },
+  "homepage": "https://github.com/jimCresswell/wdio-selenium-grid-setup-test#readme"
+}
