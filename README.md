@@ -1,2 +1,3 @@
 # wdio-selenium-grid-setup-test
-A simple web service and WebdriverIO tests to help shakedown a CI setup.
+
+A simple web service and WebdriverIO test to help shakedown a CI setup.
