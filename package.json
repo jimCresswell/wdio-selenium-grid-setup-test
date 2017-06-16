@@ -4,6 +4,7 @@
   "description": "A simple example web page and WebdriverIO test to help comission CI infrastructure setups.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "wdio"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jimCresswell/wdio-selenium-grid-setup-test/issues"
   },
-  "homepage": "https://github.com/jimCresswell/wdio-selenium-grid-setup-test#readme"
+  "homepage": "https://github.com/jimCresswell/wdio-selenium-grid-setup-test#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
