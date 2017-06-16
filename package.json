@@ -4,10 +4,12 @@
   "description": "A simple example web page and WebdriverIO test to help comission CI infrastructure setups.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "pretest": "node app.js & echo $! > test.pid",
+    "start": "node app.js & echo $! > ./app.pid",
+    "pretest": "npm start",
     "test": "wdio",
-    "posttest": "kill `cat ./test.pid` && rm ./test.pid"
+    "posttest": "npm stop",
+    "test:ci": "wdio wdio.ci.conf.js",
+    "stop": "kill `cat ./app.pid` && rm ./app.pid"
   },
   "repository": {
     "type": "git",
