@@ -85,7 +85,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: 'http://localhost:' + (process.env.port || 3000),
+    baseUrl: (process.env.APP_HOST || 'http://localhost') + ':' + (process.env.APP_PORT || 3000),
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
