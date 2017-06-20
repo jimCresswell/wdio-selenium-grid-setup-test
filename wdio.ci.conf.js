@@ -60,14 +60,13 @@ exports.config = {
       {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['ignore-certificate-errors']
+          //args: ['ignore-certificate-errors']
         },
-        proxy: {
-          proxyType: 'MANUAL',
-          httpProxy: process.env.HTTP_PROXY,
-          httpsProxy: process.env.HTTP_PROXY,
-
-        }
+        // proxy: {
+        //   proxyType: 'MANUAL',
+        //   httpProxy: process.env.HTTP_PROXY,
+        //   httpsProxy: process.env.HTTP_PROXY,
+        // }
       }
     ],
     //
@@ -150,7 +149,7 @@ exports.config = {
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
         failFast: false,    // <boolean> abort the run on first failure
-        format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
+        format: ['junit'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
         colors: true,       // <boolean> disable colors in formatter output
         snippets: true,     // <boolean> hide step definition snippets for pending steps
         source: true,       // <boolean> hide source uris
