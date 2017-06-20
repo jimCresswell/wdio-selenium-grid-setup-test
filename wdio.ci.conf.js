@@ -64,7 +64,9 @@ exports.config = {
         },
         proxy: {
           proxyType: 'MANUAL',
-          httpProxy: process.env.HTTP_PROXY
+          httpProxy: process.env.HTTP_PROXY,
+          httpsProxy: process.env.HTTP_PROXY,
+
         }
       }
     ],
