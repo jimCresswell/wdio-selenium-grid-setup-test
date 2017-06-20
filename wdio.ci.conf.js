@@ -60,7 +60,7 @@ exports.config = {
       {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['allow-insecure-localhost', 'ignore-certificate-errors']
+          args: ['--allow-insecure-localhost', '--ignore-certificate-errors']
         }
       }
     ],
