@@ -52,21 +52,11 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [
-      // {
-      //   maxInstances: 1,
-      //   browserName: 'firefox',
-      //   acceptInsecureCerts: true
-      // }
+      {
+        browserName: 'firefox',
+      },
       {
         browserName: 'chrome',
-        chromeOptions: {
-          //args: ['ignore-certificate-errors']
-        },
-        // proxy: {
-        //   proxyType: 'MANUAL',
-        //   httpProxy: process.env.HTTP_PROXY,
-        //   httpsProxy: process.env.HTTP_PROXY,
-        // }
       }
     ],
     //
