@@ -118,7 +118,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    // reporters: ['dot'],//
+    reporters: ['dot', 'junit'],
+    reporterOptions: {
+        junit: {
+            outputDir: './reports/'
+        }
+    },
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         require: ['./specs/step-definitions/'],        // <string[]> (file/dir) require files before executing features

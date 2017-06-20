@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "wdio-cucumber-framework": "^0.3.1",
+    "wdio-junit-reporter": "^0.3.0",
     "wdio-selenium-standalone-service": "^0.0.9",
     "webdriverio": "^4.8.0"
   }

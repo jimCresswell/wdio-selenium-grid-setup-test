@@ -128,7 +128,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    // reporters: ['dot'],//
+    reporters: ['junit'],
+    reporterOptions: {
+        junit: {
+            outputDir: './reports/'
+        }
+    },
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         require: ['./specs/step-definitions/'],        // <string[]> (file/dir) require files before executing features
@@ -136,7 +141,7 @@ exports.config = {
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
         failFast: false,    // <boolean> abort the run on first failure
-        format: ['junit'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
+        format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
         colors: true,       // <boolean> disable colors in formatter output
         snippets: true,     // <boolean> hide step definition snippets for pending steps
         source: true,       // <boolean> hide source uris
