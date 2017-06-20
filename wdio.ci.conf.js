@@ -60,7 +60,11 @@ exports.config = {
       {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['--allow-insecure-localhost', '--ignore-certificate-errors']
+          args: ['ignore-certificate-errors']
+        },
+        proxy: {
+          proxyType: 'MANUAL',
+          httpProxy: process.env.HTTP_PROXY
         }
       }
     ],
