@@ -9,4 +9,12 @@ module.exports = function () {
     this.Then(/^the page is hilarious$/, () => {
         assert.ok($('#can-you-see-me figcaption').getText().toLowerCase().includes('god'), 'Caption should be on page.');
     })
+
+    this.Given(/^the user is looking at another path$/, () => {
+        browser.url('/another_path');
+    })
+
+    this.Then(/^the page at another path is visible$/, () => {
+        assert.ok($('#the_one_thing').isExisting(), 'The other page should be open.');
+    })
 }
